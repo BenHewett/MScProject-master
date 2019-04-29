@@ -18,14 +18,14 @@ The project is composed of several web-based components:
 
 1) A Data Collection Application - records speech samples and stores data in MySQL database.
 
--> Used to collect speech samples for use within the project
+  -> Used to collect speech samples for use within the project
 
--> One prototype developed - Web_Application_Data_Collection_Prototype
+  -> One prototype developed - Web_Application_Data_Collection_Prototype
 
-Note: you are free to download the prototype but the database connection has been terminated so it will throw an error if you attempt to record any data.
+  Note: you are free to download the prototype but the database connection has been terminated so it will throw an error if           you attempt to record any data.
 
--> One deployed application - Web_Application_Data_Collection_Deployed
+  -> One deployed application - Web_Application_Data_Collection_Deployed
 
-Note: the deployed data collection application was originally deployed on Google's App Engine platform. Since the project has concluded this has been taken offline. You are free to download the final application but functionality might not match that described in the report.
+  Note: the deployed data collection application was originally deployed on Google's App Engine platform. Since the project           has concluded this has been taken offline. You are free to download the final application but functionality might not         match that described in the report.
 
 2) 
