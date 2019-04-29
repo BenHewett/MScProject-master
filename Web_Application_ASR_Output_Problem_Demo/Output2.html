@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASR and Disfluent Speech Processing</title>
+</head>
+<body style="background-color: ghostwhite">
+<h1 style="text-decoration: underline; text-align: center">The "Output" Problem (2)</h1>
+<h3 style="position: absolute; left: 275px; top: 70px; text-decoration: underline">Audio to ASR</h3>
+<h3 style="position: absolute; left: 180px; top: 100px; text-decoration: underline">Prototype #3: User-control -> Record</h3>
+<h3 style="position: absolute; left: 240px; top: 125px; text-decoration: underline">Pause/Restart (optional)</h3>
+<p style="position:absolute; top: 160px; left: 70px;">"When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow"</p>
+<div style="position: absolute; left: 170px; top: 220px;">
+    <form method="post" action="/ASR_output2/">
+        <textarea title="" id="TA3" style="resize: none; border: ridge; text-align: center" rows="25" cols="50" disabled>{{ utterance2 }}</textarea>
+        <button style="position:absolute; top: 360px;left: 100px; height: 30px; width: 150px; background-color: beige"
+                name="ta2" value="clear_button1" type="submit">Clear Text</button>
+    </form>
+</div>
+<p style="position:absolute; bottom: 50px; left: 490px;">Start/Stop</p>
+<p style="position:absolute; bottom: 40px; left: 500px;">---------- ></p>
+<p style="position:absolute; bottom: 50px; left: 860px;">Pause/Restart</p>
+<p style="position:absolute; bottom: 40px; left: 850px;">< ---------</p>
+<div style="position:absolute; top: 330px; left: 600px; border: 2px solid black">
+    <table>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>1</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>2</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>3</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>4</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>5</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>6</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>7</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>8</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>9</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form method="post" action="/ASR_output2/">
+                    <button style="font-size: medium; width: 75px; height: 75px;" name="ta2" value="start/stop_button1" type="submit"><b>#</b></button>
+                </form>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>0</b></button>
+            </td>
+            <td>
+                <form method="post" action="/ASR_output2/">
+                    <button style="font-size: medium; width: 75px; height: 75px;" name="ta2" value="pause/restart_button1" type="submit"><b>*</b></button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="position: absolute; right: 50px; bottom: 50px; width: 250px; height: 250px; border: 1px solid black">
+    <h4 style="position:absolute; top: 10px; right: 70px;"><u>Processing Time</u></h4>
+    <form method="post" action="/ASR_output2/">
+        <textarea title="" id="TA7" style="position: absolute; top: 60px; left: 35px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ processing3 }}</textarea>
+        <br>
+        <textarea title="" id="TA8" style="position: absolute; top: 90px; left: 35px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ processing4 }}</textarea>
+        <br>
+        <textarea title="" id="TA9" style="position: absolute; top: 120px; left: 35px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ processing5 }}</textarea>
+        <br>
+        <textarea title="" id="TA10" style="position: absolute; top: 150px; left: 35px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ processing6 }}</textarea>
+        <br>
+        <textarea title="" id="TA11" style="position: absolute; top: 180px; left: 35px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ processing7 }}</textarea>
+        <br>
+        <textarea title="" id="TA12" style="position: absolute; top: 210px; left: 35px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ processing8 }}</textarea>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASR and Disfluent Speech Processing</title>
+</head>
+<body style="background-color: ghostwhite">
+<h1 style="text-decoration: underline; text-align: center">The "Input" Problem (1)</h1>
+<div style="position:absolute; top: 90px;left: 65px; border: 1px solid black; width: 270px; height: 220px; background-color: white">
+    <h4 style="text-decoration: underline; text-align: center">ASR Comparison - Pause Threshold</h4>
+    <p style="text-align: center">Google Search: 1 Second</p>
+    <p style="text-align: center">Siri (iPhone): 2 Seconds</p>
+    <p style="text-align: center">Siri (Apple Watch): 3 Seconds</p>
+    <p style="text-align: center">Argos (telephone): 4 Seconds</p>
+</div>
+<div style="position:absolute; top: 365px;left: 25px; border: 1px solid black; width: 360px; height: 230px; background-color: white">
+    <h4 style="text-decoration: underline; text-align: center">User Feedback</h4>
+    <p style="text-align: center">"I struggled to finish before it timed out"</p>
+    <p style="text-align: center">"I felt pressured to be fluent which made me more disfluent"</p>
+    <p style="text-align: center">"I had to start again several times before I was able to say the sentence"</p>
+    <p style="text-align: center">"I just couldn't be fluent enough for it to work"</p>
+</div>
+<h3 style="position: absolute; left: 620px; top: 100px; text-decoration: underline">Direct to ASR</h3>
+<p style="position:absolute; top: 145px; left: 485px;">"I am at the...[block]...house and the house is very beautiful"</p>
+<div style="position:absolute; top: 200px;left: 510px">
+    <form method="post" action="/ASR_problem1/">
+        <textarea title="" id="TA1" style="resize: none; border: ridge; text-align: center" rows="25" cols="50" disabled>{{ utterance1 }}</textarea>
+        <button style="position:absolute; top: 350px; left: 125px; height: 50px; width: 100px; background-color: beige"
+                name="ta1" value="clear_button1" type="submit">Clear Text</button>
+    </form>
+</div>
+<h4 style="position:absolute; top: 50px; right: 150px;"><u>Demo Controls</u></h4>
+<div style="position: absolute; right: 100px; top: 100px; width: 200px; height: 350px; border: 1px solid black; background-color: white">
+    <form method="post" action="/ASR_problem1/">
+        <p style="position:absolute; top: 20px; left: 50px;"><u>Pause Threshold</u></p>
+         <button style="position:absolute; top:80px; left: 10px; height: 30px; width: 80px; background-color: beige"
+                    name="ta1" value="pt_2" type="submit">2-Seconds</button>
+        <button style="position:absolute; top:80px; left: 110px; height: 30px; width: 80px; background-color: beige"
+                    name="ta1" value="pt_4" type="submit">4-Seconds</button>
+        <button style="position:absolute; top:130px; left: 60px; height: 30px; width: 80px; background-color: beige"
+                    name="ta1" value="pt_6" type="submit">6-Seconds</button>
+        <textarea title="" id="TA4" style="position: absolute; top: 180px; left: 10px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ pause_threshold1 }}</textarea>
+        <br>
+        <p style="position:absolute; top: 220px; left: 40px;"><u>Recognise Speech</u></p>
+        <button style="position:absolute; top:290px; left: 60px; height: 40px; width: 70px; background-color: beige"
+                    name="ta1" value="asr_button1" type="submit">Start</button>
+    </form>
+</div>
+</body>
+</html>

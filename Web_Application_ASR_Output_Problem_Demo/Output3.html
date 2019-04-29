@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASR and Disfluent Speech Processing</title>
+</head>
+<body style="background-color: ghostwhite">
+<h1 style="text-decoration: underline; text-align: center">The "Output" Problem (3)</h1>
+<h3 style="position: absolute; left: 275px; top: 70px; text-decoration: underline">Audio to ASR</h3>
+<h3 style="position: absolute; left: 180px; top: 100px; text-decoration: underline">Prototype #3: User-control -> Record</h3>
+<h3 style="position: absolute; left: 240px; top: 125px; text-decoration: underline">Pause/Restart (optional)</h3>
+<p style="position:absolute; top: 160px; left: 70px;">"When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow"</p>
+<div style="position: absolute; left: 170px; top: 220px;">
+    <form method="post" action="/ASR_output3/">
+        <textarea title="" id="TA3" style="resize: none; border: ridge; text-align: center" rows="25" cols="50" disabled>{{ utterance3 }}</textarea>
+        <button style="position:absolute; top: 360px;left: 100px; height: 30px; width: 150px; background-color: beige"
+                name="ta3" value="clear_button1" type="submit">Clear Text</button>
+    </form>
+</div>
+<p style="position:absolute; bottom: 50px; left: 490px;">Start/Stop</p>
+<p style="position:absolute; bottom: 40px; left: 500px;">---------- ></p>
+<p style="position:absolute; bottom: 50px; left: 860px;">Pause/Restart</p>
+<p style="position:absolute; bottom: 40px; left: 850px;">< ---------</p>
+<div style="position:absolute; top: 330px; left: 600px; border: 2px solid black">
+    <table>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>1</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>2</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>3</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>4</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>5</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>6</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>7</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>8</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>9</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form method="post" action="/ASR_output3/">
+                    <button style="font-size: medium; width: 75px; height: 75px;" name="ta3" value="start/stop_button1" type="submit"><b>#</b></button>
+                </form>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>0</b></button>
+            </td>
+            <td>
+                <form method="post" action="/ASR_output3/">
+                    <button style="font-size: medium; width: 75px; height: 75px;" name="ta3" value="pause/restart_button1" type="submit"><b>*</b></button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+<h4 style="position:absolute; top: 10px; right: 150px;"><u>Demo Controls</u></h4>
+<div style="position: absolute; right: 50px; top: 60px; width: 300px; height: 320px; border: 1px solid black">
+    <form method="post" action="/ASR_output3/">
+        <p style="position:absolute; left: 110px;"><u>Audio Files</u></p>
+         <button style="position:absolute; top:40px; left: 60px; height: 30px; width: 60px; background-color: beige"
+                    name="ta3" value="play_button1" type="submit">File 1</button>
+        <button style="position:absolute; top:40px; left: 160px; height: 30px; width: 60px; background-color: beige"
+                    name="ta3" value="play_button2" type="submit">File 2</button>
+        <textarea title="" id="TA4" style="position: absolute; top: 80px; left: 50px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ audio3 }}</textarea>
+        <br>
+        <textarea title="" id="TA2" style="position: absolute; top: 110px; left: 50px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ duration3 }}</textarea>
+        <p style="position:absolute; top: 130px; left: 85px;"><u>Recognise Audio</u></p>
+         <button style="position:absolute; top:180px; left: 70px; height: 30px; width: 60px; background-color: beige"
+                    name="ta3" value="asr_button1" type="submit">File 1</button>
+        <button style="position:absolute; top:180px; left: 150px; height: 30px; width: 60px; background-color: beige"
+                    name="ta3" value="asr_button2" type="submit">File 2</button>
+        <textarea title="" id="TA5" style="position: absolute; bottom: 70px; left: 50px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ asr3 }}</textarea>
+        <br>
+        <textarea title="" id="TA6" style="position: absolute; bottom: 40px; left: 50px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ processing3 }}</textarea>
+        <br>
+        <textarea title="" id="TA7" style="position: absolute; bottom: 10px; left: 50px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ misrecs3 }}</textarea>
+    </form>
+</div>
+<div style="position: absolute; right: 50px; top: 400px; width: 300px; height: 220px;">
+    <form method="post" action="/ASR_output3/">
+        <p style="position:absolute; left: 110px;"><u>Amended Text</u></p>
+        <textarea title="" id="TA11" style="position: absolute; top: 40px; left: 60px;resize: none; border: ridge; text-align: center" rows="10" cols="25" disabled>{{ amended1 }}</textarea>
+    </form>
+</div>
+</body>
+</html>

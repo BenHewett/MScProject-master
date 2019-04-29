@@ -1,0 +1,900 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ASR and Disfluent Speech Processing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<h3 align="center">Project Data - Fluent Data</h3>
+<a href="../../Home.html">Main Menu</a align="center">
+<br>
+<br>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Filename</th>
+<th>Script</th>
+<th>Fluent</th>
+<th>Disfluent</th>
+<th>Frame_Rate</th>
+<th>Channels</th>
+<th>Sample_Width</th>
+<th>Play File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>9f104b83-c5c0-4062-b834-3a8036dd5744G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/9f104b83-c5c0-4062-b834-3a8036dd5744G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>1</th>
+<td>Sun Dec 30 2018 11_19_52 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Sun Dec 30 2018 11_19_52 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>2</th>
+<td>Sat Dec 29 2018 16_05_05 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Sat Dec 29 2018 16_05_05 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>3</th>
+<td>8e21f210-8b80-4938-9857-8360cc83edf0(1)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/8e21f210-8b80-4938-9857-8360cc83edf0(1)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>4</th>
+<td>Sun Jan 13 2019 17_55_28 GMT+0000 (GMT)(2)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Sun Jan 13 2019 17_55_28 GMT+0000 (GMT)(2)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>5</th>
+<td>Wed Jan 02 2019 20_20_19 GMT+0000 (GMT)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Wed Jan 02 2019 20_20_19 GMT+0000 (GMT)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>6</th>
+<td>Wed Dec 26 2018 21_07_47 GMT+0000 (GMT)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>1</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Wed Dec 26 2018 21_07_47 GMT+0000 (GMT)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>7</th>
+<td>Sat Dec 29 2018 19-55-25 GMT+0000 (GMT Standard Time)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Sat Dec 29 2018 19-55-25 GMT+0000 (GMT Standard Time)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>8</th>
+<td>Wed Dec 26 2018 20_44_20 GMT+0000 (GMT)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>1</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Wed Dec 26 2018 20_44_20 GMT+0000 (GMT)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>9</th>
+<td>f18b6a41-6a27-42c7-9004-382224830563(1)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/f18b6a41-6a27-42c7-9004-382224830563(1)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>10</th>
+<td>brownsellboyf3R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/brownsellboyf3R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>11</th>
+<td>Wed Dec 26 2018 20_48_27 GMT+0000 (GMT)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>1</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Wed Dec 26 2018 20_48_27 GMT+0000 (GMT)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>12</th>
+<td>Sat Dec 29 2018 20-09-22 GMT+0000 (GMT Standard Time)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Sat Dec 29 2018 20-09-22 GMT+0000 (GMT Standard Time)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>13</th>
+<td>Wed Jan 02 2019 21_00_27 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Wed Jan 02 2019 21_00_27 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>14</th>
+<td>Sat Dec 29 2018 20-07-18 GMT+0000 (GMT Standard Time)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Sat Dec 29 2018 20-07-18 GMT+0000 (GMT Standard Time)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>15</th>
+<td>Sat Dec 29 2018 16_03_19 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Sat Dec 29 2018 16_03_19 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>16</th>
+<td>Sat Dec 29 2018 19-43-10 GMT+0000 (GMT Standard Time)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Sat Dec 29 2018 19-43-10 GMT+0000 (GMT Standard Time)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>17</th>
+<td>Fri Dec 28 2018 15_04_02 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Fri Dec 28 2018 15_04_02 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>18</th>
+<td>(3)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/(3)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>19</th>
+<td>laurabrownsell2R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/laurabrownsell2R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>20</th>
+<td>Wed Jan 02 2019 20_21_27 GMT+0000 (GMT)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Wed Jan 02 2019 20_21_27 GMT+0000 (GMT)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>21</th>
+<td>Sun Jan 13 2019 17_55_28 GMT+0000 (GMT)(1)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Sun Jan 13 2019 17_55_28 GMT+0000 (GMT)(1)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>22</th>
+<td>brownsellboyf4G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/brownsellboyf4G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>23</th>
+<td>Fri Dec 28 2018 15_05_40 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Fri Dec 28 2018 15_05_40 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>24</th>
+<td>8e21f210-8b80-4938-9857-8360cc83edf0(2)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/8e21f210-8b80-4938-9857-8360cc83edf0(2)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>25</th>
+<td>Mon Jan 07 2019 15_15_38 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Mon Jan 07 2019 15_15_38 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>26</th>
+<td>Fri Dec 28 2018 15_09_04 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Fri Dec 28 2018 15_09_04 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>27</th>
+<td>(4)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/(4)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>28</th>
+<td>Thu Jan 03 2019 20_58_34 GMT+0000 (GMT)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Thu Jan 03 2019 20_58_34 GMT+0000 (GMT)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>29</th>
+<td>Sun Dec 30 2018 11_17_18 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Sun Dec 30 2018 11_17_18 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>30</th>
+<td>8e21f210-8b80-4938-9857-8360cc83edf0R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/8e21f210-8b80-4938-9857-8360cc83edf0R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>31</th>
+<td>Sat Dec 29 2018 13_46_38 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Sat Dec 29 2018 13_46_38 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>32</th>
+<td>Thu Jan 03 2019 20_57_08 GMT+0000 (GMT)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Thu Jan 03 2019 20_57_08 GMT+0000 (GMT)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>33</th>
+<td>Sat Dec 29 2018 10_23_57 GMT+0000 (GMT)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Sat Dec 29 2018 10_23_57 GMT+0000 (GMT)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>34</th>
+<td>Sat Dec 29 2018 15_59_24 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Sat Dec 29 2018 15_59_24 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>35</th>
+<td>(2)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/(2)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>36</th>
+<td>Wed Dec 26 2018 20_09_58 GMT+0000 (GMT)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>1</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Wed Dec 26 2018 20_09_58 GMT+0000 (GMT)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>37</th>
+<td>Sat Dec 29 2018 14_10_53 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Sat Dec 29 2018 14_10_53 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>38</th>
+<td>Thu Jan 03 2019 20_51_52 GMT+0000 (GMT)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Thu Jan 03 2019 20_51_52 GMT+0000 (GMT)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>39</th>
+<td>Wed Jan 02 2019 21_11_44 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Wed Jan 02 2019 21_11_44 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>40</th>
+<td>Sat Dec 29 2018 19-40-22 GMT+0000 (GMT Standard Time)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Sat Dec 29 2018 19-40-22 GMT+0000 (GMT Standard Time)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>41</th>
+<td>Sat Dec 29 2018 16_01_17 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Sat Dec 29 2018 16_01_17 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>42</th>
+<td>laurabrownsellR1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/laurabrownsellR1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>43</th>
+<td>Sun Jan 13 2019 17_55_28 GMT+0000 (GMT)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Sun Jan 13 2019 17_55_28 GMT+0000 (GMT)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>44</th>
+<td>Fri Dec 28 2018 15_07_19 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Fri Dec 28 2018 15_07_19 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>45</th>
+<td>Wed Jan 02 2019 20_17_36 GMT+0000 (GMT)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Wed Jan 02 2019 20_17_36 GMT+0000 (GMT)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>46</th>
+<td>Sun Jan 13 2019 17_50_26 GMT+0000 (GMT)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Sun Jan 13 2019 17_50_26 GMT+0000 (GMT)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>47</th>
+<td>Sun Dec 30 2018 11_15_05 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Sun Dec 30 2018 11_15_05 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>48</th>
+<td>laurabrownsell4G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/laurabrownsell4G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>49</th>
+<td>Sun Jan 13 2019 17_53_05 GMT+0000 (GMT)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Sun Jan 13 2019 17_53_05 GMT+0000 (GMT)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>50</th>
+<td>Thu Dec 27 2018 12_44_25 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>1</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Thu Dec 27 2018 12_44_25 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>51</th>
+<td>Sat Dec 29 2018 10_17_40 GMT+0000 (GMT)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Sat Dec 29 2018 10_17_40 GMT+0000 (GMT)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>52</th>
+<td>brownsellboyf2R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/brownsellboyf2R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>53</th>
+<td>Sat Dec 29 2018 13_57_13 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Sat Dec 29 2018 13_57_13 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>54</th>
+<td>Sat Dec 29 2018 14_02_57 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Sat Dec 29 2018 14_02_57 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>55</th>
+<td>Wed Jan 02 2019 21_07_26 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Wed Jan 02 2019 21_07_26 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>56</th>
+<td>laurabrownsell3R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/laurabrownsell3R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>57</th>
+<td>Sun Dec 30 2018 11_12_35 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Sun Dec 30 2018 11_12_35 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>58</th>
+<td>47fd7718-3c43-4de4-823c-c3cb74a4c576R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/47fd7718-3c43-4de4-823c-c3cb74a4c576R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>59</th>
+<td>Thu Dec 27 2018 12_51_05 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>1</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Thu Dec 27 2018 12_51_05 GMT+0000 (Greenwich Mean Time)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>60</th>
+<td>Wed Jan 02 2019 21_03_44 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Wed Jan 02 2019 21_03_44 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>61</th>
+<td>Mon Jan 07 2019 15_09_54 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Mon Jan 07 2019 15_09_54 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>62</th>
+<td>Sat Dec 29 2018 20-01-04 GMT+0000 (GMT Standard Time)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Sat Dec 29 2018 20-01-04 GMT+0000 (GMT Standard Time)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>63</th>
+<td>Thu Dec 27 2018 12_53_11 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>1</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Thu Dec 27 2018 12_53_11 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>64</th>
+<td>(1)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/(1)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>65</th>
+<td>brownsellboyfR1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/brownsellboyfR1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>66</th>
+<td>Sat Dec 29 2018 19-33-06 GMT+0000 (GMT Standard Time)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Sat Dec 29 2018 19-33-06 GMT+0000 (GMT Standard Time)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>67</th>
+<td>Mon Jan 07 2019 15_21_00 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Mon Jan 07 2019 15_21_00 GMT+0000 (Greenwich Mean Time)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>68</th>
+<td>Sat Dec 29 2018 10_22_13 GMT+0000 (GMT)R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/Sat Dec 29 2018 10_22_13 GMT+0000 (GMT)R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>69</th>
+<td>Sat Dec 29 2018 10_20_19 GMT+0000 (GMT)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Sat Dec 29 2018 10_20_19 GMT+0000 (GMT)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>70</th>
+<td>Sat Dec 29 2018 19-37-00 GMT+0000 (GMT Standard Time)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Sat Dec 29 2018 19-37-00 GMT+0000 (GMT Standard Time)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>71</th>
+<td>9f104b83-c5c0-4062-b834-3a8036dd5744(1)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/9f104b83-c5c0-4062-b834-3a8036dd5744(1)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>72</th>
+<td>Sun Jan 13 2019 17_59_25 GMT+0000 (GMT)G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Sun Jan 13 2019 17_59_25 GMT+0000 (GMT)G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>73</th>
+<td>Wed Jan 02 2019 20_19_06 GMT+0000 (GMT)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Wed Jan 02 2019 20_19_06 GMT+0000 (GMT)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>74</th>
+<td>Mon Jan 07 2019 15_24_03 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav</td>
+<td>R1</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R1/Fluent/Mon Jan 07 2019 15_24_03 GMT+0000 (Greenwich Mean Time)R1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>75</th>
+<td>Wed Jan 02 2019 20_21_27 GMT+0000 (GMT)1G1!Fluent.wav</td>
+<td>G1</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/G1/Fluent/Wed Jan 02 2019 20_21_27 GMT+0000 (GMT)1G1!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>76</th>
+<td>Thu Dec 27 2018 12_49_10 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>1</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Thu Dec 27 2018 12_49_10 GMT+0000 (Greenwich Mean Time)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>77</th>
+<td>f18b6a41-6a27-42c7-9004-382224830563R3!Fluent.wav</td>
+<td>R3</td>
+<td>True</td>
+<td>False</td>
+<td>48000</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R3/Fluent/f18b6a41-6a27-42c7-9004-382224830563R3!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+<tr>
+<th>78</th>
+<td>Thu Jan 03 2019 20_54_28 GMT+0000 (GMT)R2!Fluent.wav</td>
+<td>R2</td>
+<td>True</td>
+<td>False</td>
+<td>44100</td>
+<td>2</td>
+<td>2</td>
+<td><audio controls><source src="../../Audio_Data/R2/Fluent/Thu Jan 03 2019 20_54_28 GMT+0000 (GMT)R2!Fluent.wav" type="audio/wav"></audio></td>
+</tr>
+</tbody>
+</table>
+<br>
+
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: small;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+h2 {
+    color: black;
+    text-underline-position: below;
+    text-align: center;
+    text-decoration: underline;
+    text-indent: 150px;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+#welcome {
+    text-align: center;
+    line-height: 2;
+}
+
+#project_info {
+    text-align: center;
+    line-height: 2;
+}
+
+#requirements {
+    text-align: center;
+    line-height: 2;
+}
+
+#data_protection {
+    text-align: center;
+    line-height: 2;
+}
+
+.image_container1 {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.image_container1 img {
+    width: 100%;
+    height: auto;
+}
+
+.image_container2 {
+    height: 200px;
+    width: 200px;
+    float: left;
+    position: relative;
+    top: 100px;
+}
+
+.image_container2 img {
+    width: 100%;
+    height: auto;
+}
+
+#button1 {
+    height: 30px; 
+    width: 150px; 
+    font-size: 16px; 
+    background: white;
+    position: relative;
+    left: 300px;
+}
+
+
+

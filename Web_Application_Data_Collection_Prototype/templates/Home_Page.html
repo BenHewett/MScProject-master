@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/static/Home_Page.css">
+        <title>ASR and Disfluent Speech Processing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+    <body style="overflow-x: hidden">
+        <h2 style="position:relative;left: 40px;">Automatic Speech Recognition (ASR) and Disfluent Speech Processing</h2>
+        <p style="position:relative; left: 550px"><b>*Please maximise your browser window at all times*</b></p>
+        <br>
+        <div class="image_container1" style="position: absolute; top: 50px; left: 50px">
+            <img src="/static/SR_Practise.jpeg" alt="Speech Recognition">
+        </div>
+        <p id="welcome" style="position: relative; left: 110px">Thank you for your interest in taking part in this project.<br>Please take a moment to read through the information on this page before proceeding.</p>
+        <br>
+        <h3 style="position: relative; left: 110px; top: 10px">What is this project all about?</h3>
+        <p id="project_info" style="position: relative; left: 150px; top: 10px">As part of a masters degree in computer science at the University of Birmingham I am conducting some research into the use of<br>
+            automatic speech recognition systems (ASR), specifically how they process disfluent speech. My goal is to design a system which is able to do<br>
+            two things: firstly, to manipulate an audio wave of a given sample of disfluent speech <i>before</i> it is processed by the ASR in the hope of <br>
+            changing the sample into something which the ASR finds more recognisable; secondly, <i>after</i> the sample has been processed by the<br>
+            ASR, to 'fill in' any remaining words from the sample which remain unrecognised using a probability model. As a person who stammers<br>
+            myself, the idea for the project came about from my own dissatisfaction with the current state of speech recognition systems.</p>
+        <br>
+        <div class="image_container2" style="position: absolute; top: 400px; left: 50px">
+            <img src="/static/SR_Practise.jpeg" alt="Speech Recognition">
+        </div>
+        <h3 style="position: relative; left: 105px">What will you need to do?</h3>
+        <p id="requirements" style="position: relative; left: 120px">I require many samples of fluent and disfluent speech in order to gather data on the efficacy of my system. You will be asked to read<br>a phonetically-balanced passage of text, split into three sections, into the microphone on your device. This will be recorded, stored as<br>an audio file in a secure database, and used to test the progress of my system. </p>
+        <br>
+        <div class="image_container2" style="position: absolute; top: 730px; left: 50px">
+            <img src="/static/SR_Practise.jpeg" alt="Speech Recognition">
+        </div>
+        <h3 style="position: relative; left: 110px">How will your data be handled?</h3>
+        <p id="data_protection" style="position: relative; left: 100px">Your speech will be recorded and stored securely as an audio file. I am collecting no personal data so there is no way for me to identify<br> anyone from the audio. The audio samples will only be used to obtain the underlying data in order for me to develop the methods outlined<br> above. Only I will have access to the data files and they will only be used for purpose of the project.<br> The files will be securely destroyed once the project has completed.</p>
+        <br>
+        <p style="position: relative; left: 400px">If you have any concerns or queries, please feel free to email me at <a href="mailto: bdh727@student.bham.ac.uk">BDH727@student.bham.ac.uk</a></p>
+        <br>
+        <p style="position: relative; left: 560px">If you are happy to proceed, please press 'Proceed'</p>
+        <div class="button1" style="position: relative; top: 110px; left: 30px;" >
+            <form method="get" action="/practise">
+                <button style="position: absolute; left: 635px; bottom: 50px; height: 50px" id="button1" type="submit" >Proceed</button>
+            </form>
+        </div>
+    </body>
+</html>

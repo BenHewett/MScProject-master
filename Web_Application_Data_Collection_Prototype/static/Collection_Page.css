@@ -1,0 +1,144 @@
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: small;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    width: 1200px;
+    height: 800px;
+}
+
+h2.title {
+    color: black;
+    text-underline-position: below;
+    text-decoration: underline;
+    position: relative;
+    left: 300px;
+}
+
+#info1 {
+    line-height: 2;
+    position: relative;
+    top: 10px;
+    left: 500px;
+    right: 180px;
+}
+
+#info2 {
+    line-height: 2;
+    position: relative;
+    top: 10px;
+    left: 80px;
+    right: 180px;
+}
+
+#info3 {
+    line-height: 2;
+    position: relative;
+    top: 10px;
+    left: 60px;
+    right: 180px;
+}
+
+#info4 {
+    line-height: 2;
+    position: relative;
+    top: 10px;
+    left: 220px;
+    right: 180px;
+}
+
+.text-bubble1 {
+    background-color: white;
+    border: 2px solid #c8c8c8;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+    bottom: 280px;
+    left: 430px;
+    right: 180px;
+    width: 400px;
+    height: 210px;
+}
+
+#start1_button {
+    height: 30px; 
+    width: 150px; 
+    font-size: 14px; 
+    background: white; 
+    position: absolute; 
+    top: 180px; 
+    left: 200px;
+}
+
+.text-bubble2 {
+    background-color: white;
+    border: 2px solid #c8c8c8;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+    bottom: 280px;
+    left: 430px;
+    right: 180px;
+    width: 400px;
+    height: 210px;
+}
+
+#start2_button {
+    height: 30px; 
+    width: 150px; 
+    font-size: 14px; 
+    background: white; 
+    position: absolute; 
+    top: 210px; 
+    left: 50px;
+}
+
+#stop2_button {
+    height: 30px; 
+    width: 150px; 
+    font-size: 14px; 
+    background: white; 
+    position: absolute; 
+    top: 210px; 
+    left: 250px;
+}
+
+.text-bubble3 {
+    background-color: white;
+    border: 2px solid #c8c8c8;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+    bottom: 280px;
+    left: 430px;
+    right: 180px;
+    width: 400px;
+    height: 250px;
+}
+
+#start3_button {
+    height: 30px; 
+    width: 150px; 
+    font-size: 14px; 
+    background: white; 
+    position: absolute; 
+    top: 250px; 
+    left: 50px;
+}
+
+#stop3_button {
+    height: 30px; 
+    width: 150px; 
+    font-size: 14px; 
+    background: white; 
+    position: absolute; 
+    top: 250px; 
+    left: 250px;
+}
+

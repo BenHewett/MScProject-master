@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="/static/Practise_Page.css">
+        <title>ASR and Disfluent Speech Processing</title>
+  </head>
+    <body style="overflow-x: hidden">
+        <h2>Automatic Speech Recognition (ASR) and Disfluent Speech Processing</h2>
+        <form method="get" action="/">
+            <button id="home_button" type="submit" style="height: 50px;">Back to home page</button>
+        </form>
+        <br>
+        <p style="position:relative; left: 520px"><b>*Please maximise your browser window at all times*</b></p>
+        <div class="image_container">
+            <img src="/static/SR_Practise.jpeg" alt="Speech Recognition" style="position: relative; top: 240px; left: 90px; width: 220px" >
+        </div>
+        <p style="position: relative; top: 20px; left: 20px; line-height: 30px">So that you can get a feel for what to expect from the experiment, you will be able to practise on this page before moving onto the experiment.</p>
+        <p style="position: relative; top: 20px; left: 90px; line-height: 30px">For each passage, select whether you are a fluent/disfluent participant, press the 'Start' button to begin recording and 
+        <p style="position: relative; top: 20px; left: 300px; line-height: 30px">speak the passage into the microphone on your device.</p>
+        <p style="position: relative; top: 20px; left: 30px; line-height: 30px">When you have finished speaking, wait for the recording to stop and for the button to display 'Done!' before moving onto the next passage.</p>
+        <div class="text-bubble1"; style="position:relative; height: 200px; width: 500px; top: 50px; left: 430px;">
+            <form method="post" action="/practise_record_button1/">
+                <fieldset style="position:relative; right: 75px; display: inline-block;">
+                    <legend>Are you a fluent or a disfluent participant?</legend>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 50px" type="radio" name="speech_category" value="fluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Fluent</label>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 40px" type="radio" name="speech_category" value="disfluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Disfluent</label>
+                    <br>
+                </fieldset>
+                <p style="line-height: 20px">"The North Wind and the Sun were disputing which was the stronger, when a traveller came along wrapped
+                    in a warm cloak. They agreed that the one who first succeeded in making the traveller take his cloak
+                    off should be considered stronger than the other."</p>
+                <button style="height: 50px; position: absolute; left: 200px; top: 175px; margin: 5px; background-color: beige" id="start1_button" type="submit">Start</button>
+            </form>
+        </div>
+        <div class="image_container1">
+            <img src="/static/SR_Practise.jpeg" alt="Speech Recognition" style="position: relative; top: 590px; left: 90px; width: 220px;">
+        </div>
+        <p id="done"; style="position:relative; left: 75px;top: 75px">That's all you will need to do in the experiment. Please try one more time.</p>
+        <br>
+        <div class="text-bubble2"; style="position:relative; height: 210px; width: 500px; top: 100px; left: 430px;">
+            <form method="post" action="/practise_record_button2/">
+                <fieldset style="display: inline-block;">
+                    <legend>Are you a fluent or a disfluent participant?</legend>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 50px" type="radio" name="speech_category" value="fluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Fluent</label>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 40px" type="radio" name="speech_category" value="disfluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Disfluent</label>
+                    <br>
+                </fieldset>
+                <p style="line-height: 20px">"Then the North Wind blew as hard as he could, but the more he blew the more closely did the traveller
+                    fold his cloak around him, and at last the North Wind gave up the attempt. Then the Sun shone out warmly,
+                    and immediately the traveller took off his cloak. And so the North Wind was obliged to confess that the
+                    Sun was the stronger of the two."</p>
+                <button style="height: 50px; position: absolute; left: 190px; top: 185px; margin: 5px; background-color: beige" id="speak2_button" type="submit">Start</button>
+            </form>
+        </div>
+        <p id="done1"; style="position:relative; top: 130px; left: 75px;">If you are happy to proceed and to begin the experiment, please press 'Proceed'.</p>
+        <form method="get" action="/collection">
+            <button id="proceed_button" type="submit" style="position:relative; top: 150px; left: 615px; height: 50px;">Proceed</button>
+        </form>
+        <br>
+        <br>
+    </body>
+</html>

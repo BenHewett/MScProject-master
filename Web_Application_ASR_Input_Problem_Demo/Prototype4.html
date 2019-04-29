@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASR and Disfluent Speech Processing</title>
+</head>
+<body style="background-color: ghostwhite">
+<a style="position:absolute; top: 10px;" href="{{ url_for('prototype_page3') }}">Back</a>
+<div style="position:absolute; top: 50px;left: 25px; border: 1px solid black; width: 370px; height: 280px; background-color: white">
+    <h4 style="text-decoration: underline; text-align: center">User Feedback</h4>
+    <p style="text-align: center">"Good to have lots of control but I don't think I'd start
+        all over again very often, it seems to prolong the problem rather than solve it"</p>
+    <p style="text-align: center">"I got quite confused with all the buttons!"</p>
+    <p style="text-align: center">"The reset option was useful in theory, especially if I was particularly disfluent, but it would have been quicker to use the original system [Direct to ASR]"</p>
+    <p style="text-align: center">"Too many buttons to think about!"</p>
+</div>
+<div style="position:absolute; top: 380px;left: 25px; border: 1px solid black; width: 370px; height: 260px; background-color: white">
+    <h4 style="text-decoration: underline; text-align: center">Key Conclusions</h4>
+    <p style="text-align: center">Sense of control goes beyond the bounds of being useful and into the realm of being confusing</p>
+    <p style="text-align: center">Significant usability problems regarding ease of use and practical usability</p>
+    <p style="text-align: center">Learning curve too steep</p>
+    <p style="text-align: center">Processing time: possible reduction in captured disfluency due to user control if user used reset feature repeatedly to capture fluency</p>
+</div>
+<h1 style="text-decoration: underline; text-align: center">The "Input" Problem (5)</h1>
+<h3 style="position: absolute; left: 575px; top: 70px; text-decoration: underline">Audio to ASR</h3>
+<h3 style="position: absolute; left: 480px; top: 95px; text-decoration: underline">Prototype #4: User-control -> Record</h3>
+<h3 style="position: absolute; left: 510px; top: 115px; text-decoration: underline">Pause/Restart + Reset (optional)</h3>
+<p style="position:absolute; top: 150px; left: 450px;">"I am at the...[block]...house and the house is very beautiful"</p>
+<div style="position: absolute; left: 470px; top: 190px;">
+    <form method="post" action="/ASR_prototype4/">
+        <textarea title="" id="TA3" style="resize: none; border: ridge; text-align: center" rows="25" cols="50" disabled>{{ utterance5 }}</textarea>
+        <button style="position:absolute; top: 360px;left: 100px; height: 30px; width: 150px; background-color: beige"
+                name="ta5" value="clear_button3" type="submit">Clear Text</button>
+    </form>
+</div>
+<p style="position:absolute; bottom: 45px; left: 740px;">Start/Stop</p>
+<p style="position:absolute; bottom: 35px; left: 740px;">------------- ></p>
+<p style="position:absolute; bottom: 45px; left: 1145px;">Pause/Restart</p>
+<p style="position:absolute; bottom: 35px; left: 1125px;">< -----------------</p>
+<p style="position:absolute; top: 640px; left: 920px;">Reset</p>
+<p style="position:absolute; top: 640px; left: 965px;">^</p>
+<p style="position:absolute; top: 650px; left: 900px;">-------------</p>
+<div style="position:absolute; top: 325px; left: 850px; border: 2px solid black">
+    <table>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>1</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>2</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>3</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>4</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>5</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>6</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>7</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>8</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>9</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form method="post" action="/ASR_prototype4/">
+                    <button style="font-size: medium; width: 75px; height: 75px;" name="ta5" value="start/stop_button3" type="submit"><b>#</b></button>
+                </form>
+            </td>
+            <td>
+                <form method="post" action="/ASR_prototype4/">
+                    <button style="font-size: medium; width: 75px; height: 75px;" name="ta5" value="reset_button3" type="submit"><b>0</b></button>
+                </form>
+            </td>
+            <td>
+                <form method="post" action="/ASR_prototype4/">
+                    <button style="font-size: medium; width: 75px; height: 75px;" name="ta5" value="pause/restart_button3" type="submit"><b>*</b></button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+<h4 style="position:absolute; top: 20px; right: 150px;"><u>Demo Controls</u></h4>
+<div style="position: absolute; right: 50px; top: 70px; width: 300px; height: 220px; border: 1px solid black">
+    <form method="post" action="/ASR_prototype4/">
+        <p style="position:absolute; left: 110px;"><u>Audio Files</u></p>
+         <button style="position:absolute; top:40px; left: 60px; height: 30px; width: 60px; background-color: beige"
+                    name="ta5" value="play_button1" type="submit">File 1</button>
+        <button style="position:absolute; top:40px; left: 160px; height: 30px; width: 60px; background-color: beige"
+                    name="ta5" value="play_button2" type="submit">File 2</button>
+        <textarea title="" id="TA4" style="position: absolute; top: 80px; left: 50px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ audio5 }}</textarea>
+        <br>
+        <p style="position:absolute; top: 90px; left: 85px;"><u>Recognise Audio</u></p>
+         <button style="position:absolute; top:140px; left: 70px; height: 30px; width: 60px; background-color: beige"
+                    name="ta5" value="asr_button1" type="submit">File 1</button>
+        <button style="position:absolute; top:140px; left: 150px; height: 30px; width: 60px; background-color: beige"
+                    name="ta5" value="asr_button2" type="submit">File 2</button>
+        <textarea title="" id="TA5" style="position: absolute; bottom: 10px; left: 50px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ asr5 }}</textarea>
+    </form>
+</div>
+</body>
+</html>

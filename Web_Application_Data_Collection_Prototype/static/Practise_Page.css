@@ -1,0 +1,147 @@
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: small;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    width: 1200px;
+    height: 800px;
+}
+
+h2 {
+    color: black;
+    text-underline-position: below;
+    text-align: center;
+    text-decoration: underline;
+    text-indent: 150px;
+}
+
+.image_container {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.image_container img {
+    width: 100%;
+    height: auto;
+}
+
+.image_container1 {
+    height: 200px; 
+    width: 200px;
+    float: left;
+    position: absolute;
+    top: 100px;
+}
+
+.image_container1 img {
+    width: 100%;
+    height: auto;
+}
+
+#info {
+    text-align: center;
+    line-height: 2;
+}
+
+#done {
+    text-align: center;
+    line-height: 2;
+    position: absolute;
+    top: 470px;
+    bottom: 100px;
+    right: 100px;
+    left: 240px;
+    height: 10px;
+}
+
+.text-bubble1 {
+    background-color: white;
+    border: 2px solid #c8c8c8;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 320px;
+    bottom: 280px;
+    left: 480px;
+    right: 180px;
+    width: 400px;
+    height: 200px;
+}
+
+#start1_button {
+    height: 30px;
+    width: 150px;
+    font-size: 14px;
+    background: white;
+    position: absolute;
+    top: 80px;
+    left: 150px
+}
+
+#stop1_button {
+    height: 30px;
+    width: 150px;
+    font-size: 14px;
+    background: white;
+    position: absolute;
+    top: 80px;
+    left: 150px
+}
+
+.text-bubble2 {
+    background-color: white;
+    border: 2px solid #c8c8c8;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 560px;
+    bottom: 280px;
+    left: 480px;
+    right: 180px;
+    width: 400px;
+    height: 100px;
+}
+
+#speak2_button {
+    height: 30px; 
+    width: 150px; 
+    font-size: 14px; 
+    background: white; 
+    position: absolute; 
+    top: 80px; 
+    left: 150px
+}
+
+#done1 {
+    text-align: center;
+    line-height: 2;
+    position: absolute;
+    top: 670px;
+    bottom: 100px;
+    right: 100px;
+    left: 240px;
+    height: 10px;
+}
+
+#proceed_button {
+    height: 30px; 
+    width: 150px; 
+    font-size: 14px; 
+    background: white; 
+    position: absolute; 
+    top: 720px; 
+    left: 640px
+}
+
+#home_button {
+    height: 30px; 
+    width: 150px; 
+    font-size: 14px; 
+    background: white; 
+    position: absolute; 
+    top: 20px; 
+    left: 50px
+}

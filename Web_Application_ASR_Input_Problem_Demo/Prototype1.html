@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASR and Disfluent Speech Processing</title>
+</head>
+<body style="background-color: ghostwhite">
+<div style="position:absolute; top: 50px;left: 25px; border: 1px solid black; width: 360px; height: 270px; background-color: white">
+    <h4 style="text-decoration: underline; text-align: center">User Feedback</h4>
+    <p style="text-align: center">"Great that there is longer to speak but when
+        I didn't stammer it took ages to stop and give the results"</p>
+    <p style="text-align: center">"I liked that it felt like nothing had changed, even though it had"</p>
+    <p style="text-align: center">"Even with the extra time, I still felt pressured and that the clock was ticking"</p>
+    <p style="text-align: center">"This worked really well for me but was quite slow to respond"</p>
+</div>
+<div style="position:absolute; top: 350px;left: 25px; border: 1px solid black; width: 360px; height: 270px; background-color: white">
+    <h4 style="text-decoration: underline; text-align: center">Key Conclusions</h4>
+    <p style="text-align: center">Users still felt pressured which caused further disfluency</p>
+    <p style="text-align: center">Poor user experience when fluency achieved due to long wait times</p>
+    <p style="text-align: center">Processing time: the longer the pause threshold the longer the processing time</p>
+</div>
+<h1 style="text-decoration: underline; text-align: center">The "Input" Problem (2)</h1>
+<h3 style="position: absolute; left: 580px; top: 100px; text-decoration: underline">Direct to ASR</h3>
+<h3 style="position: absolute; left: 480px; top: 125px; text-decoration: underline">Prototype #1: Increase Pause Threshold</h3>
+<p style="position:absolute; top: 180px; left: 450px;">"I am at the...[block]...house and the house is very beautiful"</p>
+<div style="position:absolute; top: 230px;left: 475px; ">
+    <form method="post" action="/ASR_prototype1/">
+        <textarea title="" id="TA1" style="resize: none; border: ridge; text-align: center" rows="25" cols="50" disabled>{{ utterance2 }}</textarea>
+        <button style="position:absolute; top: 360px;left: 100px; height: 30px; width: 150px; background-color: beige"
+                name="ta2" value="clear_button1" type="submit">Clear Text</button>
+    </form>
+</div>
+<p style="position:absolute; bottom: 105px; left: 880px;">Start</p>
+<p style="position:absolute; bottom: 95px; left: 870px;">---------- ></p>
+<div style="position:absolute; top: 285px; left: 950px; border: 2px solid black">
+    <table>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>1</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>2</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>3</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>4</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>5</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>6</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>7</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>8</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>9</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form method="post" action="/ASR_prototype1/">
+                    <button style="font-size: medium; width: 75px; height: 75px;" name="ta2" value="start_button1" type="submit"><b>#</b></button>
+                </form>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>0</b></button>
+            </td>
+            <td>
+                <button style="font-size: medium; width: 75px; height: 75px;" type="button"><b>*</b></button>
+            </td>
+        </tr>
+    </table>
+</div>
+<h4 style="position:absolute; top: 10px; right: 170px;"><u>Demo Controls</u></h4>
+<div style="position: absolute; right: 80px; top: 60px; width: 300px; height: 175px; border: 1px solid black; background-color: white">
+    <form method="post" action="/ASR_prototype1/">
+        <p style="position:absolute; left: 100px;"><u>Pause Threshold</u></p>
+         <button style="position:absolute; top:50px; left: 55px; height: 30px; width: 90px; background-color: beige"
+                    name="ta2" value="pt_5" type="submit">5-Seconds</button>
+        <button style="position:absolute; top:50px; left: 150px; height: 30px; width: 90px; background-color: beige"
+                    name="ta2" value="pt_10" type="submit">10-Seconds</button>
+        <button style="position:absolute; top:90px; left: 55px; height: 30px; width: 90px; background-color: beige"
+                    name="ta2" value="pt_15" type="submit">15-Seconds</button>
+        <button style="position:absolute; top:90px; left: 150px; height: 30px; width: 90px; background-color: beige"
+                    name="ta2" value="pt_20" type="submit">20-Seconds</button>
+        <textarea title="" id="TA4" style="position: absolute; top: 140px; left: 60px;resize: none; border: ridge; text-align: center" rows="1" cols="25" disabled>{{ pause_threshold2 }}</textarea>
+    </form>
+</div>
+<a style="position:absolute; top: 10px; left: 1200px;" href="{{ url_for('prototype_page2') }}">Next...</a>
+</body>
+</html>

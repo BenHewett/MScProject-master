@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link type="text/css" rel="stylesheet" href="/static/Collection_Page.css">
+    <title>ASR and Disfluent Speech Processing</title>
+  </head>
+  <body style="overflow-x: hidden">
+        <h2 style="position: relative; left: 300px;" class="title">Automatic Speech Recognition (ASR) and Disfluent Speech Processing</h2>
+        <p style="position:relative; left: 480px"><b>*Please maximise your browser window at all times*</b></p>
+        <br>
+        <p style="position: relative; left: 525px">Thank you for proceeding with the project.</p>
+        <p style="position: relative; left: 200px">You are asked to read several passages of text into the microphone on your device. Your speech will be recorded and stored in a database.</p>
+        <p style="position: relative; left: 80px">For each passage, select whether you are a fluent or disfluent participant, press the 'Start' button to begin recording and speak the passage into the microphone on your device.</p>
+        <br>
+        <div class="image_container">
+            <img src="/static/SR_Practise.jpeg" alt="Speech Recognition" style="position: absolute; top: 250px; left: 40px; height: 240px; width: 220px">
+        </div>
+        <div class="text-bubble1" style="position: relative; top: 10px; left: 340px; height: 250px; width: 600px;">
+            <form method="post" action="/collection_record_button1/" style="position: absolute;">
+                <fieldset style="display: inline-block;">
+                    <legend>Are you a fluent or a disfluent participant?</legend>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 50px" type="radio" name="speech_category" value="fluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Fluent</label>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 40px" type="radio" name="speech_category" value="disfluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Disfluent</label>
+                    <br>
+                </fieldset>
+            <p style="position: relative; right: 5px; top: 10px; line-height: 20px; margin: 10px">"When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow. The rainbow is a division of white light into many beautiful colors.
+                These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon.
+                There is , according to legend, a boiling pot of gold at one end. People look, but no one ever finds it.
+                When a man looks for something beyond his reach, his friends say he is looking for the pot of gold at the end of the rainbow."</p>
+            <!--<form method="post" action="/collection_record_button1/">-->
+                <button style="height: 50px; position: absolute; left: 230px; top: 200px; margin: 5px; background-color: beige" id="start1_button" type="submit">Done!</button>
+            </form>
+        </div>
+        <br>
+        <p style="position: relative; left: 200px; top: 10px">Thanks. When you are ready to begin the next passage, select fluent or disfluent and press the 'Start' button to begin reading the passage.</p>
+        <br>
+        <div class="image_container">
+            <img src="/static/SR_Practise.jpeg" alt="Speech Recognition" style="position: relative; top: 100px; left: 50px; height: 240px; width: 220px;">
+        </div>
+        <div class="text-bubble2" style="position: absolute; top: 650px; left: 340px; height: 260px; width: 600px;">
+            <form method="post" action="/collection_record_button2/" style="position: absolute">
+                <fieldset style="display: inline-block;">
+                    <legend>Are you a fluent or a disfluent participant?</legend>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 50px" type="radio" name="speech_category" value="fluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Fluent</label>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 40px" type="radio" name="speech_category" value="disfluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Disfluent</label>
+                    <br>
+                </fieldset>
+            <p style="position: relative; right: 5px; top: 10px; line-height: 20px; margin: 10px">"Throughout the centuries people have explained the rainbow in various ways. Some have accepted it as a miracle without physical explanation.
+                To the Hebrews it was a token that there would be no more universal floods. The Greeks used to imagine that it was a sign from the gods to foretell war or heavy rain.
+                The Norsemen considered the rainbow as a bridge over which the gods passed from earth to their home in the sky. Others have tried to explain the phenomenon physically.
+                Aristotle thought that the rainbow was caused by reflection of the sun's rays by the rain."</p>
+                <button style="height: 50px; position: absolute; top: 215px;left: 230px; margin: 5px; background-color: beige" id="start2_button" type="submit">Start</button>
+            </form>
+        </div>
+        <br>
+        <p style="position: relative; top: 140px; left: 200px">Thanks. When you are ready to begin the next passage, select fluent or disfluent and press the 'Start' button to begin reading the passage.</p>
+        <br>
+        <div class="image_container">
+            <img src="/static/SR_Practise.jpeg" alt="Speech Recognition" style="position: relative; top: 230px; left: 50px; height: 240px; width: 220px">
+        </div>
+        <div class="text-bubble3" style="position: absolute; top: 1100px; left: 340px; height: 295px; width: 600px;">
+            <form method="post" action="/collection_record_button3/" style="position: absolute">
+                <fieldset style="display: inline-block;">
+                    <legend>Are you a fluent or a disfluent participant?</legend>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 50px" type="radio" name="speech_category" value="fluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Fluent</label>
+                    <input style="display: inline-block; vertical-align: top; margin-left: 40px" type="radio" name="speech_category" value="disfluent">
+                    <label style="display: inline-block; vertical-align: top; margin-right: 5px">Disfluent</label>
+                    <br>
+                </fieldset>
+            <p style="position: relative; right: 5px; top: 10px; line-height: 20px; margin: 10px">"Since then physicists have found that it is not reflection, but refraction by the raindrops which causes the rainbows. Many complicated ideas about the rainbow have been formed.
+                The difference in the rainbow depends considerably upon the size of the drops, and the width of the colored band increases as the size of the drops increases.
+                he actual primary rainbow observed is said to be the effect of super-imposition of a number of bows. If the red of the second bow falls upon the green of the first,
+                the result is to give a bow with an abnormally wide yellow band, since red and green light when mixed form yellow. This is a very common type of bow, one showing mainly red and yellow, with little or no green or blue."</p>
+                <button style="height: 50px; position: absolute; top: 250px; left: 220px; margin: 5px; background-color: beige" id="start3_button" type="submit">Start</button>
+            </form>
+        </div>
+        <br>
+        <p style="position: relative; top: 290px; left: 560px">I appreciate your participation!</p>
+        <p style="position: relative; top: 300px; left: 500px"><b>Please close your browser window to finish</b></p>
+        <br style="height: 10px">
+    </body>
+</html>
