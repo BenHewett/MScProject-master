@@ -16,7 +16,7 @@ Methodology:
 
 The project is composed of several web-based components:
 
-A Data Collection Application - records speech samples and stores data in MySQL database.
+1) A Data Collection Application - records speech samples and stores data in MySQL database.
 
 -> Used to collect speech samples for use within the project
 
@@ -28,4 +28,4 @@ Note: you are free to download the prototype but the database connection has bee
 
 Note: the deployed data collection application was originally deployed on Google's App Engine platform. Since the project has concluded this has been taken offline. You are free to download the final application but functionality might not match that described in the report.
 
-
+2) 
