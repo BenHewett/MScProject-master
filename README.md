@@ -18,9 +18,9 @@ The project is composed of several web-based components:
 
 1) A Data Collection Application - records speech samples and stores data in MySQL database.
 
-  -> Used to collect speech samples for use within the project
+    -> Used to collect speech samples for use within the project
 
-  -> One prototype developed - Web_Application_Data_Collection_Prototype
+    -> One prototype developed - Web_Application_Data_Collection_Prototype
 
   Note: you are free to download the prototype but the database connection has been terminated so it will throw an error if           you attempt to record any data.
 
